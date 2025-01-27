@@ -4,8 +4,18 @@
     align-items: center;
     &__navigation{
         display: flex;
-        flex-direction: column;
         align-items: center;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        @media screen and (max-width:800px) {
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            padding: 20px;
+            flex-direction: column;
+        }
     }
     
 }
