@@ -114,12 +114,12 @@ h6 {
 .hero {
   background-image: url("images/maldives-imageHawaiiTP1.jpg");
   min-height: 100vh;
+  /*&__titre{
+      width: 30rem;
+  }*/
 }
 .hero__description {
   width: 20rem;
-}
-.hero__titre {
-  width: 30rem;
 }
 .hero__btnInscription {
   display: flex;
