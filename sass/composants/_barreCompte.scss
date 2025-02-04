@@ -8,11 +8,19 @@
     justify-content: center;
     align-items: center;
     height: 5rem;
-    width: fit-content;
-    box-shadow: 1px 2px 5px rgb(197, 255, 255);
+    box-shadow: 1px 2px 5px $couleur_azure-bordure;
     background-color: white;
 
     &__Inscription p{
         color: white;
+    }
+}
+
+.barreCompte_input{
+    border: solid 1px $couleur_azure-bordure;
+    outline: none;
+    &::placeholder{
+        color: rgba(0, 0, 0, 0.3);
+        font-style: italic;
     }
 }

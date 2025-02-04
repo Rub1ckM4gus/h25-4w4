@@ -115,13 +115,24 @@ h6 {
   justify-content: center;
   align-items: center;
   height: 5rem;
-  width: -moz-fit-content;
-  width: fit-content;
   box-shadow: 1px 2px 5px rgb(197, 255, 255);
   background-color: white;
 }
 .barreCompte__Inscription p {
   color: white;
+}
+
+.barreCompte_input {
+  border: solid 1px rgb(197, 255, 255);
+  outline: none;
+}
+.barreCompte_input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
+}
+.barreCompte_input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
 }
 
 /* Les layouts */
