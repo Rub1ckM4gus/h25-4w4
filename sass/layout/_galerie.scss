@@ -11,5 +11,12 @@ main{
 
 .galerie__conteneur{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.galerie__figure{
+    margin: 0;
 }
