@@ -112,7 +112,13 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-.entete__navigation {
+.entete__logo {
+  width: 420px;
+  height: 100px;
+  margin: 2rem;
+  border-radius: 20px;
+}
+.entete__nav {
   display: flex;
   align-items: center;
   position: static;
@@ -121,7 +127,8 @@ h6 {
   width: auto;
 }
 @media screen and (max-width: 800px) {
-  .entete__navigation {
+  .entete__nav {
+    position: absolute;
     top: 0;
     right: 0;
     background-color: #fff;
