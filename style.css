@@ -105,6 +105,14 @@ h6 {
   padding: 3px;
 }
 
+.barreCompte p {
+  margin: 0;
+}
+
+.barreCompte {
+  display: flex;
+}
+
 /* Les layouts */
 .global {
   max-width: 1100px;
@@ -114,12 +122,12 @@ h6 {
 .hero {
   background-image: url("images/maldives-imageHawaiiTP1.jpg");
   min-height: 100vh;
+  /*&__titre{
+      width: 30rem;
+  }*/
 }
 .hero__description {
-  width: 20rem;
-}
-.hero__titre {
-  width: 30rem;
+  width: 35rem;
 }
 .hero__btnInscription {
   display: flex;
