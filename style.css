@@ -215,5 +215,8 @@ main img {
     background-color: #fff;
     padding: 20px;
     flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
