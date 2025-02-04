@@ -7,10 +7,11 @@
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    height: 5rem;
     box-shadow: 1px 2px 5px $couleur_azure-bordure;
     background-color: white;
-
+    flex-wrap: wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
     &__Inscription p{
         color: white;
     }

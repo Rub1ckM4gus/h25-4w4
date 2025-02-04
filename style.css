@@ -114,9 +114,11 @@ h6 {
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  height: 5rem;
   box-shadow: 1px 2px 5px rgb(197, 255, 255);
   background-color: white;
+  flex-wrap: wrap;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .barreCompte__Inscription p {
   color: white;
@@ -164,6 +166,19 @@ h6 {
 }
 .hero__btnInscription:hover {
   background-color: rgb(0, 132, 255);
+}
+
+main h4 {
+  margin-left: 40px;
+}
+main img {
+  width: 256px;
+  height: 183px;
+}
+
+.galerie__conteneur {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .entete {
