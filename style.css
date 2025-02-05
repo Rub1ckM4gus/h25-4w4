@@ -21,6 +21,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* Les règles de base */
 a {
   color: #5d5;
+  transition: color 1s;
+}
+
+a:hover {
+  color: rgb(7, 83, 7);
 }
 
 body {
@@ -55,9 +60,14 @@ h6 {
 /* Les composants */
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style-type: none;
   gap: 10px;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+  }
 }
 .menu__li {
   display: inline-block;
@@ -82,6 +92,10 @@ h6 {
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.recherche__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
 .recherche__input::placeholder {
   color: rgba(0, 0, 0, 0.2);
   font-style: italic;
@@ -91,15 +105,91 @@ h6 {
   padding: 3px;
 }
 
+.barreCompte p {
+  margin: 0;
+}
+
+.barreCompte {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 2px 5px rgb(197, 255, 255);
+  background-color: white;
+  flex-wrap: wrap;
+  padding: 1em;
+  position: relative;
+  left: 16.66%;
+  bottom: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.barreCompte__Inscription p {
+  color: white;
+}
+
+.barreCompte_input {
+  border: solid 1px rgb(197, 255, 255);
+  outline: none;
+}
+.barreCompte_input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
+}
+.barreCompte_input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-style: italic;
+}
+
 /* Les layouts */
 .global {
   max-width: 1100px;
-  padding: 10vh 5vw;
+  padding: 10vh;
 }
 
 .hero {
   background-image: url("images/maldives-imageHawaiiTP1.jpg");
   min-height: 100vh;
+  /*&__titre{
+      width: 30rem;
+  }*/
+}
+.hero__description {
+  width: 35rem;
+}
+.hero__btnInscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2rem;
+  width: 6rem;
+  background-color: rgb(128, 247, 247);
+  margin-bottom: 1em;
+  transition: background-color 1s;
+}
+.hero__btnInscription:hover {
+  background-color: rgb(0, 132, 255);
+}
+
+main h4 {
+  margin-left: 40px;
+}
+main img {
+  width: 256px;
+  height: 183px;
+}
+
+.galerie__conteneur {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.galerie__figure {
+  margin: 0;
 }
 
 .entete {
@@ -107,8 +197,30 @@ h6 {
   justify-content: space-between;
   align-items: center;
 }
-.entete__navigation {
+.entete__logo {
+  width: 420px;
+  height: 100px;
+  margin: 2rem;
+  border-radius: 20px;
+}
+.entete__nav {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  position: static;
+  flex-direction: row;
+  background-color: transparent;
+  width: auto;
+}
+@media screen and (max-width: 800px) {
+  .entete__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
