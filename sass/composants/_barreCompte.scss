@@ -10,8 +10,12 @@
     box-shadow: 1px 2px 5px $couleur_azure-bordure;
     background-color: white;
     flex-wrap: wrap;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em;
+    position: relative;
+    left: 16.66%;
+    bottom: 40px;
+    width: fit-content;
+
     &__Inscription p{
         color: white;
     }

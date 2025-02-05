@@ -117,8 +117,12 @@ h6 {
   box-shadow: 1px 2px 5px rgb(197, 255, 255);
   background-color: white;
   flex-wrap: wrap;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em;
+  position: relative;
+  left: 16.66%;
+  bottom: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .barreCompte__Inscription p {
   color: white;
