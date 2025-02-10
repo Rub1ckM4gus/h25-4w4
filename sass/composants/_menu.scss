@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  @media screen and (max-width:800px){
+    flex-direction: column;
+  }
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+
+  &__li {
+    display: inline-block;
+    a {
+      padding: 4px;
+      text-decoration: none;
+    }
+  }
+}

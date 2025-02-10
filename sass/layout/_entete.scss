@@ -1,0 +1,33 @@
+.entete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        width: 420px;
+        height: 100px;
+        margin: 2rem;
+        border-radius: 20px;
+    }
+
+    &__nav{
+        display: flex;
+        align-items: center;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        width: auto;
+        @media screen and (max-width:800px) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            padding: 20px;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    
+}

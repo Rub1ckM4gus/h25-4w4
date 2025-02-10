@@ -1,0 +1,28 @@
+.hero{
+    background-image: url("images/maldives-imageHawaiiTP1.jpg");
+    min-height: 100vh;
+
+    &__description{
+        width: 35rem;
+    }
+
+    /*&__titre{
+        width: 30rem;
+    }*/
+
+    &__btnInscription{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        height: 2rem;
+        width: 6rem;
+        background-color: $couleur_inscription;
+        margin-bottom: 1em;
+        transition: background-color 1s;
+    }
+
+    &__btnInscription:hover{
+        background-color: $couleur_inscription--fonce;
+    }
+}

@@ -1,0 +1,22 @@
+main{
+    h4{
+        margin-left: 40px;
+    }
+
+    img{
+        width: 256px;
+        height: 183px;
+    }
+}
+
+.galerie__conteneur{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.galerie__figure{
+    margin: 0;
+}
