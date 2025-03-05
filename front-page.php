@@ -1,15 +1,12 @@
 <?php get_header();?>
-<!DOCTYPE html>
-<html lang="en">
-<body>
     <section class="hero">
         <div class="hero__contenu global">
-            <h1 class="hero__titre">Club de voyage</h1>
+            <h1 class="hero__titre"><?php bloginfo('name');?></h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quo, veritatis eum incidunt earum ex libero officia nemo repudiandae molestias, vitae omnis magnam exercitationem provident ratione impedit vel culpa consequatur.
+            <?php bloginfo('description');?>
             </p>
             <p class="hero__courriel">
-                <a href="#">info@cmaisonneuve.qc.ca</a>
+            <?php bloginfo('admin_email');?>
             </p>
             <p class="hero__adresse">
                 5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
@@ -23,25 +20,6 @@
         </div>
     </section>
 
-    <main>
-        <div class="galerie global">
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-            <figure class="galerie__figure">
-                <img src="" alt="" class="galerie__img">
-            </figure>
-        </div>
-    </main>
     <section class="populaire">
         <div class="global">
             <?php if (have_posts()) : while (have_posts()) : the_post();
@@ -54,6 +32,6 @@
         </div>
     </section>
     <footer></footer>
-    <?php wp_footer() ?>
+    <?php get_footer() ?>
 </body>
 </html>

@@ -1,5 +1,6 @@
 .recherche{
     display: flex;
+    height: 1.6rem;
     width: 14rem;
     border: 1px solid rgba(0,0,0, 0.1);
 
@@ -22,6 +23,5 @@
     &__img{
         flex: 0 0 20px;
         padding: 3px;
-
     }
 }

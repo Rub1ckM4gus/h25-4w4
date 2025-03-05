@@ -28,14 +28,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /* Les composants */
 @import "composants/menu";
-@import "composants/pied-page";
-@import "composants/zone-recherche";
 @import "composants/recherche";
 @import "composants/barreCompte";
 @import "composants/carte.scss";
+@import "composants/general.scss";
 
 /* Les layouts */
 @import "layout/general";
 @import "layout/hero";
 @import "layout/galerie";
 @import "layout/entete";
+@import "layout/footer";
