@@ -26,7 +26,7 @@
             if(in_category("galerie")){
                 the_content();
             }else{ ?>
-                <?php get_template_part('gabarits/carte'); ?>
+                <?php get_template_part('gabarit/carte'); ?>
             <?php } ?>
             <?php endwhile; endif; ?>
         </div>
