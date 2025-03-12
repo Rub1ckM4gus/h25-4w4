@@ -36,7 +36,8 @@ $hero_background = get_theme_mod('hero_background', '');
             <?php endwhile; endif; ?>
         </div>
     </section>
-    <footer></footer>
-    <?php get_footer() ?>
+    <footer>
+        <?php get_footer() ?>
+    </footer>
 </body>
 </html>
