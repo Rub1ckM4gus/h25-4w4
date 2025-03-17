@@ -4,6 +4,7 @@
     justify-content: space-between;
     &--grande{
         flex: 1 1 250px;
+        border: 1px solid red;
     }
     &__image{
         img{
@@ -13,11 +14,12 @@
     &__contenu{
         background-color: aliceblue;
     }
+    /*
     &__titre{
         
     }
     &__description{}
     &__bouton{
         &--actif{}
-    }
+    }*/
 }

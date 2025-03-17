@@ -2,9 +2,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /*
+  &__titre{
+
+  }
+  &__description{}
+  &__bouton{
+      &--actif{}
+  }*/
 }
 .carte--grande {
   flex: 1 1 250px;
+  border: 1px solid red;
 }
 .carte__image img {
   width: 100%;
