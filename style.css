@@ -221,6 +221,11 @@ main img {
   margin: 2rem;
   border-radius: 20px;
 }
+.entete__logo img {
+  height: 100px;
+  width: 420px;
+  border-radius: 1rem;
+}
 .entete__nav {
   display: flex;
   align-items: center;
