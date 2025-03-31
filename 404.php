@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="accueil" class="global">
+<div id="accueil" class="global404">
     <div class="gabarit_404">
         <section class="accueil__section ensemble_404">
             <div class="assembler_404">

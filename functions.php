@@ -7,6 +7,13 @@ function theme_tp_customize_register($wp_customize){
     'title' => __('Section Hero', 'theme_tp'), 
     'priority' => 30,
 ));
+/*************************** CUSTOMIZER POUR: SECTION_404 **********************************/
+$wp_customize->add_section('404_section', array(
+  'title' => __('Section_404', 'theme_tp'), 
+  'priority' => 35,
+));
+
+
 /********************** ajout de la donnée ***************************/
 $wp_customize->add_setting('hero_auteur', array(
   'default' => __('Alexis David', 'theme_tp'),
@@ -29,14 +36,14 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'section' => 'hero_section',
 )));
 
-}
 
-/*************************** CUSTOMIZER POUR: SECTION_404 ********************************* */
-/*function theme_tp_customize_register($wp_customize){
-  $wp_customize->add_section('404_section', array(
-    'title' => __('Section_404', 'theme_tp'), 
-    'priority' => 35,
-));*/
+/******************* CUSTOMIZER POUR: SECTION_404 *****************/
+$wp_customize->add_section('404_section', array(
+  'title' => __('Section_404', 'theme_tp'), 
+  'priority' => 35,
+));
+
+}
 
 add_action('customize_register', 'theme_tp_customize_register');
 
