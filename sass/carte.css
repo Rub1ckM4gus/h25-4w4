@@ -13,7 +13,6 @@
 }
 .carte--grande {
   flex: 1 1 250px;
-  border: 1px solid red;
 }
 .carte__image img {
   width: 100%;
