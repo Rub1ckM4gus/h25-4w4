@@ -1,12 +1,15 @@
 .gabarit_404{
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.assembler_404{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60rem;
     flex-direction: column;
+    height: 60rem;
 }
 
 .texte_annonce404, .texte_explication404{
@@ -34,5 +37,8 @@
     color: black;
     flex-direction: column;
     text-decoration: none;
-    background-color: rgba(0, 143, 186, 0.518);
+    background-color: rgba(0, 143, 186, 0.575);
+    border-radius: 3px;
+    padding: 8px;
+    margin-top: 3rem;
 }

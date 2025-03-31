@@ -36,8 +36,9 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
   'section' => 'hero_section',
 )));
 
-
+////////////////////////////////////////////////////////////////////
 /******************* CUSTOMIZER POUR: SECTION_404 *****************/
+////////////////////////////////////////////////////////////////////
 $wp_customize->add_section('404_section', array(
   'title' => __('Section_404', 'theme_tp'), 
   'priority' => 35,

@@ -6,7 +6,6 @@ $background_404= get_theme_mod('background_404', '');
 
 <div id="accueil" class="global404">
     <div class="gabarit_404" style="background-image: url(<?php echo $background_404 ?>)">
-        <section class="accueil__section ensemble_404">
             <div class="assembler_404">
                 <div>
                     <h2 class="texte_annonce404">Oops, vous avez échoué sur l'île 404 !</h2>
@@ -18,14 +17,14 @@ $background_404= get_theme_mod('background_404', '');
                         <button id="bouton_retour" type="button">Retour à l'accueil</button>
                     </div>
                 </div>
-            </div>
+
+                <div class="les_categories">
+                    <a href="https://gftnth00.mywhc.ca/4w4_24/costa-rica-2/" class="proposition_populaire">Costa Rica</a>
+                    <a href="https://gftnth00.mywhc.ca/4w4_24/amazon-rainforest-bresil/" class="proposition_populaire">Brézil</a>
+                    <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yellowstone-etats-unis/" class="proposition_populaire">Yellowstone</a>
+                    <a href="https://gftnth00.mywhc.ca/4w4_24/fiordland-national-park-nouvelle-zelande/" class="proposition_populaire">Nouvelle-Zélande</a>
+                </div>
         </section>
-        <div class="les_categories">
-            <a href="https://gftnth00.mywhc.ca/4w4_24/costa-rica-2/" class="proposition_populaire">Costa Rica</a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/amazon-rainforest-bresil/" class="proposition_populaire">Brézil</a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yellowstone-etats-unis/" class="proposition_populaire">Yellowstone</a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/fiordland-national-park-nouvelle-zelande/" class="proposition_populaire">Nouvelle-Zélande</a>
-        </div>
     </div>
 </div>
 <?php  get_footer();?>
