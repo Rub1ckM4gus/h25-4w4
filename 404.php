@@ -5,14 +5,13 @@
         <section class="accueil__section ensemble_404">
             <div class="assembler_404">
                 <div>
-                    <h2 class="texte_section">Erreur 404</h2>
-                    <h4 class="texte_404">Vous essayez d'accéder à une page qui n'existe pas</h4>
-                    <h4 class="texte_404">Pour revenir à la page d'accueil, cliquez sur le lien suivant</h4>
+                    <h2 class="texte_annonce404">Oops, vous avez échoué sur l'île 404 !</h2>
+                    <p class="texte_explication404">Pas de panique, cher membre explorateur ! Vous avez dérivé
+                        un peu trop loin des destinations de rêve que notre club a soigneusement sélectionnées 
+                        pour vous. Reprenez votre périple en cliquant sur 'Accueil' pour découvrir à nouveau 
+                        nos voyages d’exception !</p>
                     <div class="conteneur_404">
-                        <button id="bouton_retour" type="button">Explorez le monde</button>
-                        <?php 
-                        echo get_search_form();
-                       ?>
+                        <button id="bouton_retour" type="button">Retour à l'accueil</button>
                     </div>
                 </div>
             </div>
