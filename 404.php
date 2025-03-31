@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
+<?php
+$background_404= get_theme_mod('background_404', '');
+?>
+
 <div id="accueil" class="global404">
-    <div class="gabarit_404">
+    <div class="gabarit_404" style="background-image: url(<?php echo $background_404 ?>)">
         <section class="accueil__section ensemble_404">
             <div class="assembler_404">
                 <div>

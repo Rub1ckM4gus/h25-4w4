@@ -1,10 +1,11 @@
 .gabarit_404{
-    background-image: url("images/ilepalmier.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40rem;
+    height: 60rem;
     flex-direction: column;
 }
 
