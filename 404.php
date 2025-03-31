@@ -16,12 +16,12 @@
                 </div>
             </div>
         </section>
-        <ul class="les_categories">
-            <a href="https://gftnth00.mywhc.ca/4w4_24/costa-rica-2/"><li class="proposition_populaire">Costa Rica</li></a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/amazon-rainforest-bresil/"><li class="proposition_populaire">Brézil</li></a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yellowstone-etats-unis/"><li class="proposition_populaire">Yellowstone</li></a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/fiordland-national-park-nouvelle-zelande/"><li class="proposition_populaire">Nouvelle-Zélande</li></a>
-        </ul>
+        <div class="les_categories">
+            <a href="https://gftnth00.mywhc.ca/4w4_24/costa-rica-2/" class="proposition_populaire">Costa Rica</a>
+            <a href="https://gftnth00.mywhc.ca/4w4_24/amazon-rainforest-bresil/" class="proposition_populaire">Brézil</a>
+            <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yellowstone-etats-unis/" class="proposition_populaire">Yellowstone</a>
+            <a href="https://gftnth00.mywhc.ca/4w4_24/fiordland-national-park-nouvelle-zelande/" class="proposition_populaire">Nouvelle-Zélande</a>
+        </div>
     </div>
 </div>
 <?php  get_footer();?>

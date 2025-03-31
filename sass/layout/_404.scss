@@ -1,9 +1,11 @@
-.global404{
+.gabarit_404{
     background-image: url("images/ilepalmier.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 40rem;
+    flex-direction: column;
 }
 
 .texte_annonce404, .texte_explication404{
@@ -14,11 +16,22 @@
     width: fit-content;
     height: fit-content;
     color: yellow;
-    background-color: blue
+    background-color: rgba(165, 240, 255, 0.16)
 }
 
-.les_categories{
+#bouton_retour{
+    background-color: yellow;
+    color: rgb(0, 187, 255);
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.les_categories a{
+    color: black;
     flex-direction: column;
     text-decoration: none;
-    background-color: green;
+    background-color: rgba(0, 143, 186, 0.518);
 }
