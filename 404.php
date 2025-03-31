@@ -21,7 +21,6 @@
             <a href="https://gftnth00.mywhc.ca/4w4_24/amazon-rainforest-bresil/"><li class="proposition_populaire">Brézil</li></a>
             <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yellowstone-etats-unis/"><li class="proposition_populaire">Yellowstone</li></a>
             <a href="https://gftnth00.mywhc.ca/4w4_24/fiordland-national-park-nouvelle-zelande/"><li class="proposition_populaire">Nouvelle-Zélande</li></a>
-            <a href="https://gftnth00.mywhc.ca/4w4_24/parc-national-de-yosemite-etats-unis/"><li class="proposition_populaire">Parc Yosemite</li></a>
         </ul>
     </div>
 </div>

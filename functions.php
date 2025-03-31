@@ -32,11 +32,11 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
 }
 
 /*************************** CUSTOMIZER POUR: SECTION_404 ********************************* */
-function theme_tp_customize_register($wp_customize){
+/*function theme_tp_customize_register($wp_customize){
   $wp_customize->add_section('404_section', array(
     'title' => __('Section_404', 'theme_tp'), 
     'priority' => 35,
-));
+));*/
 
 add_action('customize_register', 'theme_tp_customize_register');
 
