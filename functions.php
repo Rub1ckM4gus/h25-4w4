@@ -39,7 +39,7 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_b
 ////////////////////////////////////////////////////////////////////
 /******************* CUSTOMIZER POUR: SECTION_404 *****************/
 ////////////////////////////////////////////////////////////////////
-$wp_customize->add_section('404_section', array(
+$wp_customize->add_section('section_404', array(
   'title' => __('Section_404', 'theme_tp'), 
   'priority' => 35,
 ));
@@ -53,7 +53,7 @@ $wp_customize->add_setting('background_404', array(
 /********************** ajout contrôle de l'image d'arrière plan *****/
 $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'background_404', array(
   'label' => __('Image en arrière plan', 'theme_tp'),
-  'section' => '404_section',
+  'section' => 'section_404',
 )));
 }
 
@@ -76,7 +76,16 @@ add_action( 'after_setup_theme', 'mon_theme_supports' );
 
 function theme_4w4_enqueue_styles() { 
 wp_enqueue_style('normalize', get_template_directory_uri(). '/normalize.css');
-wp_enqueue_style('mon-style-style', get_stylesheet_uri()); 
+wp_enqueue_style('mon-style-style', get_stylesheet_uri());
+
+wp_enqueue_script(
+  'destination_restapi',
+  get_template_directory_uri() . '/js/destination.js',
+  array(),
+  filemtime(get_template_directory() . 
+  '/js/destination.js'),
+  true
+);
 }
 /*
 */

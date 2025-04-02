@@ -36,8 +36,13 @@ $hero_background = get_theme_mod('hero_background', '');
             <?php endwhile; endif; ?>
         </div>
     </section>
-    <footer>
-        <?php get_footer() ?>
-    </footer>
+
+    <!-------------- Section Rest API -------------->
+    <section class="destination">
+        <h2 class="destination__titre">Articles de la catégorie</h2>
+        <div class="destination__list"></div>
+    </section>
+
+    <?php get_footer() ?>
 </body>
 </html>
