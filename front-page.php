@@ -37,7 +37,7 @@ $hero_background = get_theme_mod('hero_background', '');
         </div>
     </section>
 
-    <!-------------- Section Rest API -------------->
+    <!-------------- Section Rest API ---------------->
     <section class="destination">
         <h2 class="destination__titre">Articles de la catégorie</h2>
         <div class="destination__list"></div>
