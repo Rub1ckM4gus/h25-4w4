@@ -167,6 +167,18 @@ h6 {
   flex-wrap: wrap;
 }
 
+/* bouton-categorie.scss -------------- .categorie__ul */
+.categorie_ul {
+  display: flex;
+  gap: 5px;
+  list-style-type: none;
+}
+.categorie_ul_li {
+  padding: 3px;
+  border: 1px solid #aaa;
+  background-color: aquamarine;
+}
+
 /* Les layouts */
 .global {
   max-width: 1100px;

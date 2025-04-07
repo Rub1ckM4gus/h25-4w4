@@ -39,7 +39,7 @@ $hero_background = get_theme_mod('hero_background', '');
 
     <!-------------- Section Rest API ---------------->
     <section class="destination">
-        <?php categorie_liste("destination") ?>
+        <?php categories_liste("destination") ?>
         <h2 class="destination__titre">Articles de la catégorie</h2>
         <div class="destination__list"></div>
     </section>

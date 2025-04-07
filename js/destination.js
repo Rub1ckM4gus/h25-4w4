@@ -7,12 +7,14 @@
     const domaine = window.location.href
     const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
     console.log(apiUrl);
-    /*function parcourir_bouton(){
+    function parcourir_bouton(){
         const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
+        console.log("categorie__ul__li.length = ", categorie__ul__li.length)
         categorie__ul__li.forEach(elm => {
-
+            console.log(elm.tagName)
+            console.log()
         })
-    }*/
+    }
 
     fetch(apiUrl)
         .then(response => response.json())
