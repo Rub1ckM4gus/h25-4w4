@@ -1,9 +1,9 @@
 /* bouton-categorie.scss -------------- .categorie__ul */
-.categorie_ul{
+.categorie__ul{
     display: flex;
     gap: 5px;
     list-style-type: none;
-    &_li{
+    &__li{
         padding: 3px;
         border: 1px solid #aaa;
         background-color: aquamarine;

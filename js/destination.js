@@ -11,8 +11,11 @@
         const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
         console.log("categorie__ul__li.length = ", categorie__ul__li.length)
         categorie__ul__li.forEach(elm => {
-            console.log(elm.tagName)
-            console.log()
+            elm.addEventListener('mousedown', function() {
+                console.log(elm.tagName)
+                console.log("elm.dataset.category_id = ", elm.dataset.cetegory_id)
+            })
+            
         })
     }
 
@@ -25,7 +28,7 @@
                 console.log(article.title.rendered);
                 articleElement.innerHTML = `
                     <h3>${article.title.rendered}</h3>
-                    <div>${article.excerpt.rendered}</div>
+                    <p>${article.excerpt.rendered}</p>
                     <a href="${article.link}">Lire plus</a>
                 `;
                 destinationList .appendChild(articleElement);

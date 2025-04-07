@@ -168,12 +168,12 @@ h6 {
 }
 
 /* bouton-categorie.scss -------------- .categorie__ul */
-.categorie_ul {
+.categorie__ul {
   display: flex;
   gap: 5px;
   list-style-type: none;
 }
-.categorie_ul_li {
+.categorie__ul__li {
   padding: 3px;
   border: 1px solid #aaa;
   background-color: aquamarine;
