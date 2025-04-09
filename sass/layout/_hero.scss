@@ -1,4 +1,5 @@
 .hero{
+    position: relative;
     background-image: url("images/maldives.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -7,9 +8,16 @@
         width: 35rem;
     }
 
-    /*&__titre{
-        width: 30rem;
-    }*/
+    &__carrousel{
+        position: absolute;
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+    }
+
+    &__contenu{
+        z-index: 9;
+    }
 
     &__btnInscription{
         display: flex;
