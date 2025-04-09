@@ -1,6 +1,6 @@
 .hero{
     position: relative;
-    background-image: url("images/maldives.jpg");
+    //background-image: url("images/maldives.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
 
@@ -13,6 +13,7 @@
         min-height: 100vh;
         width: 100%;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     &__contenu{
