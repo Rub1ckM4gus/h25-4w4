@@ -246,6 +246,13 @@ h6 {
   background-repeat: no-repeat;
   z-index: -1;
 }
+.hero__carrousel__radio {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
 .hero__contenu {
   z-index: 9;
 }

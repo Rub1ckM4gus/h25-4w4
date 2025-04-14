@@ -16,7 +16,11 @@
         background-repeat: no-repeat;
         z-index: -1;
         &__radio{
-            
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
         }
     }
 
