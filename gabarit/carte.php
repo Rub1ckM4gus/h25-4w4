@@ -5,8 +5,13 @@
 <article class="carte carte--grande">
   <div class="carte__contenu">
     <?php
-      if (has_post_thumbnail()){
-        the_post_thumbnail('thumbnail');}
+    $logo_id = get_theme_mod('custom_logo');
+    if ($logo_id) {
+      echo wp_get_attachment_image($logo_id, 'logo', false, array(
+          'class' => 'custom-logo',
+          'alt' => get_bloginfo('name'),
+        ));
+      }
     ?>
     <h4 class="carte__titre"><?php the_title(); ?></h4>
     <p class="carte__description"><?php echo wp_trim_words(the_content(),10, "..." ); ?></p>
