@@ -168,6 +168,7 @@ h6 {
 }
 
 /* bouton-categorie.scss -------------- .categorie__ul */
+/* pour les articles des catégories "les boutons verts" ici pour modifier leur apparence*/
 .categorie__ul {
   display: flex;
   gap: 5px;

@@ -1,7 +1,7 @@
 (function(){
     console.log("carrousel.js")
     let hero__radio__input = document.querySelectorAll(".hero__radio__input")
-    let hero__carrousel = document.querySelectorAll(".hero_carrousel")
+    let hero__carrousel = document.querySelectorAll(".hero__carrousel")
     console.log(hero__carrousel.length)
     console.log("hero__radio__input = ", hero__radio__input.length)
     hero__radio__input.forEach((radio) =>{

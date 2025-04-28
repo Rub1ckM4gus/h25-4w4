@@ -7,22 +7,31 @@
     const domaine = window.location.href
     const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
     console.log(apiUrl);
+
     function parcourir_bouton(){
         const categorie__ul__li = document.querySelectorAll(".categorie__ul__li")
         console.log("categorie__ul__li.length = ", categorie__ul__li.length)
         categorie__ul__li.forEach(elm => {
             elm.addEventListener('mousedown', function() {
-                console.log(elm.tagName)
-                console.log("elm.dataset.category_id = ", elm.dataset.cetegory_id)
+                const categoryId = elm.dataset.category_id;
+                console.log("Category ID clicked:", categoryId);
+                loadArticlesByCategory(categoryId);
             })
             
         })
     }
 
+function loadArticlesByCategory(categoryId){
+    const domaine = window.location.href;
+    const apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`;
+    console.log("API URL:", apiUrl);
+
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             const destinationList = document.querySelector('.destination__list');
+            destinationList.innerHTML = ''; //vide la liste précédente
+
             data.forEach(article => {
                 const articleElement = document.createElement('div');
                 console.log(article.title.rendered);
@@ -34,5 +43,8 @@
                 destinationList .appendChild(articleElement);
             });
         })
-        .catch(error => console.error('Erreur lors de la récupération des articles:', error));
+    .catch(error => console.error('Erreur lors de la récupération des articles:', error));
+}
+parcourir_bouton();
+    
 })()

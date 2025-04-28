@@ -1,6 +1,6 @@
 <?php
 $footer_couleur = get_theme_mod('footer_couleur','#aaa')
-genere_vague($footer_couleur);
+//genere_vague($footer_couleur);
 ?>
 <footer style="background-color": <?= $footer_couleur?> >
     <div class="piedpage global">
