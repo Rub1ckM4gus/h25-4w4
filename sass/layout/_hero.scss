@@ -16,7 +16,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -1;
-        &--active{
+        opacity: 0;
+        &--active{ // .hero__carrousel--active
             opacity: 1;
         }
     }
