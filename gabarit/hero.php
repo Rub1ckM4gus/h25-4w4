@@ -19,9 +19,24 @@
     <div class="hero__contenu global">
         <!--  <div class="hero__animation"></div> mettre -->
 
-        <h1 class="hero__titre"><?php bloginfo('name');?></h1>
-        <p class="hero__description"><?php bloginfo('description');?>
-        </p>
+        <div class="hero__animation hero__animation--active">
+            <h1 class="hero__titre"><?php bloginfo('name');?></h1>
+            <p class="hero__description"><?php bloginfo('description');?>
+            </p>
+        </div>
+
+        <div class="hero__animation">
+            <h1 class="hero__titre">Lorem ipsum dolo</h1>
+            <p class="hero__description">Lorem ipsum dolo amogus
+            </p>
+        </div>
+
+        <div class="hero__animation">
+            <h1 class="hero__titre">YOYO WHAT UP!</h1>
+            <p class="hero__description">THIS SONG IS SPONSERED BY...
+            </p>
+        </div>
+       
 
         <p class="hero__courriel">
         <?php bloginfo('admin_email');?>
