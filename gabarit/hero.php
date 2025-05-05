@@ -1,14 +1,18 @@
 <?php 
     $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
-    for($k=0; $k<3; $k++){
-    $hero_background[$k] = get_theme_mod('hero_background' . $k, '');
-    }
+    $hero_nombreCarrousel = get_theme_mod('hero_nombreCarrousel', 3);
 ?>
 
-<section class="hero" style="background-image: url(<?php echo $hero_background ?>)">
-    <div class="hero__carrousel hero__carrousel--active" style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
-    <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[1] ?>)"></div>
-    <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[2] ?>)"></div>
+<section class="hero">
+
+    <?php for($k=0; $k<$hero_nombreCarrousel; $k++){
+        $hero_background[$k] = get_theme_mod('hero_background' . $k, '');
+        if($k == 0){?>
+        <div class="hero__carrousel hero__carrousel--active" style="background-image: url(<?php echo $hero_background[$k] ?>)"></div>
+        <?php } else { ?>
+        <div class="hero__carrousel" style="background-image: url(<?php echo $hero_background[$k] ?>)"></div>
+        <?php } ?>
+    <?php } ?>   
 
     <div class="hero__radio">
         <input class="hero__radio__input" data-id_radio="0" type="radio" name="carroussel" id="" checked="checked">

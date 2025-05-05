@@ -24,8 +24,21 @@
     'section' => 'hero_section',
     'type' => 'text',
     ));
+/********************** ajout de la donnée du nombre d'image dans carrousel***************************/
+    $wp_customize->add_setting('hero_nombreCarrousel', array(
+    'default' => __('3', 'theme_tp'),
+    'sanitize_callback' => 'sanitize_text_field'
+    ));
+  /********************** ajout contrôle de la donnée ******************/
+    $wp_customize->add_control('hero_nombreCarrousel', array(
+    'label' => __('nombre images carrousel', 'theme_tp'),
+    'section' => 'hero_section',
+    'type' => 'text',
+    ));
+    $hero_nombreCarrousel = get_theme_mod('hero_nombreCarrousel', 3);
+
 /********************** ajout de l'image d'arrière plan **************/
-for($k = 0; $k<3; $k++){
+for($k = 0; $k<$hero_nombreCarrousel; $k++){
     $wp_customize->add_setting('hero_background' . $k, array(
     'default' => '',
     'sanitize_callback' => 'esc_url_raw',
