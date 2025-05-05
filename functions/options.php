@@ -6,7 +6,7 @@ function mon_theme_supports() {
   add_theme_support('title-tag');
   add_theme_support('menus');
   add_theme_support('post-thumbnails');
-  add_image_size('carte', 45, 45, true);
+  add_image_size('carte', 300, 160, true);
   add_theme_support('custom-logo', array(
     'height'      => 160,
     'width'       => 300,

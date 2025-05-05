@@ -173,11 +173,14 @@ h6 {
   display: flex;
   gap: 5px;
   list-style-type: none;
+  justify-content: center;
 }
 .categorie__ul__li {
   padding: 3px;
-  border: 1px solid #aaa;
-  background-color: aquamarine;
+  border: 1px solid orangered;
+  background-color: orange;
+  color: black;
+  border-radius: 3px;
 }
 
 .vague {
