@@ -14,52 +14,22 @@
         <?php } ?>
     <?php } ?>   
 
-    <!--<div class="hero__radio">
-        <input class="hero__radio__input" data-id_radio="0" type="radio" name="carroussel" id="" checked="checked">
-        <input class="hero__radio__input" data-id_radio="1" type="radio" name="carroussel" id="">
-        <input class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel" id="">
-    </div>-->
-
-
-
-
-<div class="hero__radio">
-    <?php for ($k = 0; $k < $hero_nombreCarrousel; $k++) { ?>
-        <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" 
-               type="radio" name="carroussel" 
-               id="carroussel_<?php echo $k; ?>" 
-               <?php echo $k === 0 ? 'checked="checked"' : ''; ?>>
-    <?php } ?>
-</div>
-
-
-
-
-
-
-
+    <div class="hero__radio">
+        <?php for ($k = 0; $k < $hero_nombreCarrousel; $k++) { ?>
+            <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" 
+                type="radio" name="carroussel" 
+                id="carroussel_<?php echo $k; ?>" 
+                <?php echo $k === 0 ? 'checked="checked"' : ''; ?>>
+        <?php } ?>
+    </div>
 
     <div class="hero__contenu global">
-        <!--  <div class="hero__animation"></div> mettre -->
-
-        <div class="hero__animation hero__animation--active">
-            <h1 class="hero__titre"><?php bloginfo('name');?></h1>
-            <p class="hero__description"><?php bloginfo('description');?>
-            </p>
-        </div>
-
-        <div class="hero__animation">
-            <h1 class="hero__titre">Lorem ipsum dolo</h1>
-            <p class="hero__description">Lorem ipsum dolo amogus
-            </p>
-        </div>
-
-        <div class="hero__animation">
-            <h1 class="hero__titre">Me lit TU?</h1>
-            <p class="hero__description">THIS SONG IS SPONSERED BY...
-            </p>
-        </div>
-       
+        <?php for ($k = 0; $k < $hero_nombreCarrousel; $k++) { ?>
+            <div class="hero__animation <?php echo $k === 0 ? 'hero__animation--active' : ''; ?>">
+                <h1 class="hero__titre"><?php bloginfo('name');?></h1>
+                <p class="hero__description"><?php bloginfo('description');?></p>
+            </div>
+        <?php } ?>
 
         <p class="hero__courriel">
         <?php bloginfo('admin_email');?>
@@ -73,6 +43,7 @@
             <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000000" width="20" height="20">
             <img src="https://s2.svgbox.net/social.svg?ic=stackoverflow&color=000000" width="20" height="20">
             <img src="https://s2.svgbox.net/social.svg?ic=snapchat&color=000000" width="20" height="20">
+            <img src="https://s2.svgbox.net/social.svg?ic=github&color=000000" width="20" height="20">
         </div>
     </div>
 </section>
