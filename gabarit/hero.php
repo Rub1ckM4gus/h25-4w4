@@ -14,11 +14,30 @@
         <?php } ?>
     <?php } ?>   
 
-    <div class="hero__radio">
+    <!--<div class="hero__radio">
         <input class="hero__radio__input" data-id_radio="0" type="radio" name="carroussel" id="" checked="checked">
         <input class="hero__radio__input" data-id_radio="1" type="radio" name="carroussel" id="">
         <input class="hero__radio__input" data-id_radio="2" type="radio" name="carroussel" id="">
-    </div>
+    </div>-->
+
+
+
+
+<div class="hero__radio">
+    <?php for ($k = 0; $k < $hero_nombreCarrousel; $k++) { ?>
+        <input class="hero__radio__input" data-id_radio="<?php echo $k; ?>" 
+               type="radio" name="carroussel" 
+               id="carroussel_<?php echo $k; ?>" 
+               <?php echo $k === 0 ? 'checked="checked"' : ''; ?>>
+    <?php } ?>
+</div>
+
+
+
+
+
+
+
 
     <div class="hero__contenu global">
         <!--  <div class="hero__animation"></div> mettre -->
@@ -36,7 +55,7 @@
         </div>
 
         <div class="hero__animation">
-            <h1 class="hero__titre">YOYO WHAT UP!</h1>
+            <h1 class="hero__titre">Me lit TU?</h1>
             <p class="hero__description">THIS SONG IS SPONSERED BY...
             </p>
         </div>
