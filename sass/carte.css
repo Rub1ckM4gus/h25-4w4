@@ -13,10 +13,18 @@
 }
 .carte--grande {
   flex: 1 1 250px;
+  margin: 3rem;
 }
 .carte__image img {
   width: 100%;
 }
 .carte__contenu {
   background-color: aliceblue;
+  padding: 1rem;
+}
+.carte__contenu:hover {
+  background-color: aquamarine;
+  border: 3px solid orange;
+  border-radius: 1rem;
+  transition: border 0.5s, background-color 0.5s, border-radius 0.5s;
 }/*# sourceMappingURL=carte.css.map */

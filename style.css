@@ -149,12 +149,20 @@ h6 {
 }
 .carte--grande {
   flex: 1 1 250px;
+  margin: 3rem;
 }
 .carte__image img {
   width: 100%;
 }
 .carte__contenu {
   background-color: aliceblue;
+  padding: 1rem;
+}
+.carte__contenu:hover {
+  background-color: aquamarine;
+  border: 3px solid orange;
+  border-radius: 1rem;
+  transition: border 0.5s, background-color 0.5s, border-radius 0.5s;
 }
 
 .global {
@@ -188,15 +196,36 @@ h6 {
 }
 
 /* Les layouts */
-.populaire {
+.populaire, .thumbnail, .lePost {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
 }
 
 .global {
-  max-width: 1100px;
+  width: 100%;
   padding: 10vh 5vw;
+}
+
+.lePost {
+  background-color: rgba(167, 252, 252, 0.76);
+  padding: 2rem;
+  border-radius: 4rem;
+}
+
+.informationSupp {
+  text-align: center;
+}
+
+.temperatures {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .gabarit_404 {

@@ -4,6 +4,7 @@
     justify-content: space-between;
     &--grande{
         flex: 1 1 250px;
+        margin: 3rem;
     }
     &__image{
         img{
@@ -11,7 +12,14 @@
         }
     }
     &__contenu{
+        &:hover{
+            background-color: aquamarine;
+            border: 3px solid orange;
+            border-radius: 1rem;
+            transition: border .5s, background-color .5s, border-radius .5s;
+        }
         background-color: aliceblue;
+        padding: 1rem
     }
     /*
     &__titre{
