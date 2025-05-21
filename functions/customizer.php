@@ -6,12 +6,6 @@
     'title' => __('Section Hero', 'theme_tp'), 
     'priority' => 30,
     ));
-/*************************** CUSTOMIZER POUR: SECTION_404 **********************************/
-    $wp_customize->add_section('404_section', array(
-    'title' => __('Section_404', 'theme_tp'), 
-    'priority' => 35,
-    ));
-
 
 /********************** ajout de la donnée ***************************/
     $wp_customize->add_setting('hero_auteur', array(
@@ -69,8 +63,28 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'backgr
   'label' => __('Image en arrière plan', 'theme_tp'),
   'section' => 'section_404',
 )));
+
+
+/** CUSTOMIZER POUR IMAGES SINGLE-POST DEFAULT**/
+
+$wp_customize->add_section('section_single_post', array(
+  'title' => __('Single_Post_Image', 'theme_tp'), 
+  'priority' => 40,
+));
+
+/********************** ajout de l'image d'arrière plan **************/
+$wp_customize->add_setting('carte_default', array(
+  'default' => '',
+  'sanitize_callback' => 'esc_url_raw',
+));
+
+/********************** ajout contrôle de l'image d'arrière plan *****/
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'carte_default', array(
+  'label' => __('Image cartes par défault', 'theme_tp'),
+  'section' => 'section_single_post',
+)));
+
+
+
 }
-
-
-
 ?>
