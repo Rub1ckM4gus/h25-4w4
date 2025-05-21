@@ -1,7 +1,7 @@
 /* ------- Layout du pied de page ---------- */
 
 footer{
-    background-color: rgb(236, 136, 13);
+    background-color: orange;
     color: #000;
 }
 
@@ -21,8 +21,8 @@ footer{
         }
         &__adresse{
             flex: 0 0 40%;
-            &__coord{}
-            &__recherche{}
+            //&__coord{}
+            //&__recherche{}
         }
         &__description{
             flex: 1 0 400px;
