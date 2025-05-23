@@ -473,6 +473,10 @@ footer {
   flex: 1 0 400px;
 }
 
+.global {
+  padding-bottom: 0;
+}
+
 .populaire {
   width: 100%;
   background-color: blanchedalmond;
@@ -497,6 +501,15 @@ footer {
   border-radius: 1rem;
 }
 
+.vague-separe {
+  width: 100%;
+  height: fit-content;
+}
+
 .destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: lightgreen;
 }/*# sourceMappingURL=style.css.map */

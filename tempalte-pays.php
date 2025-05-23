@@ -16,19 +16,24 @@ get_header();
             <?php the_field('date_evenement'); ?></p>
             <?php the_field('coordonne_evenement'); ?></p>
         </div>
+        </div>
+        </article>
+    </div>
 
-        <?php
-            $template_couleur = get_theme_mod('template_couleur','lightgreen');
-            $template_couleur_background = get_theme_mod('template_couleur_background','blanchedalmond');
-            genere_vague($template_couleur, $template_couleur_background);
-        ?>
+    <div class="vague-separe">
+            <?php
+                $template_couleur = get_theme_mod('template_couleur','lightgreen');
+                $template_couleur_background = get_theme_mod('template_couleur_background','blanchedalmond');
+                genere_vague($template_couleur, $template_couleur_background);
+            ?>
+        </div>
+        
         <!-- ////////////////////////////////////////////////  section rest-api -->
         <section class="destination">
             <?php categories_liste("destination") ?>
             <!--<h2 class="destination__titre">Articles de la catégorie</h2>-->
             <div class="destination__list"></div>
         </section>
-    </div>
 </section>
 
 <?php get_footer(); ?>
