@@ -1,6 +1,6 @@
 <?php
 $footer_couleur = get_theme_mod('footer_couleur','orange');
-$footer_couleur_background = get_theme_mod('footer_couleur_background','blanchedalmond');
+$footer_couleur_background = get_theme_mod('footer_couleur_background','lightgreen');
 genere_vague($footer_couleur, $footer_couleur_background);
 ?>
 <footer style="background-color": <?= $footer_couleur?> >
