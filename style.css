@@ -193,6 +193,9 @@ h6 {
 
 .vague {
   position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: blanchedalmond;
 }
 
 /* Les layouts */
@@ -469,4 +472,28 @@ footer {
 }
 .piedpage__s1__description {
   flex: 1 0 400px;
+}
+
+.populaire {
+  width: 100%;
+  background-color: blanchedalmond;
+}
+
+.template-pays {
+  width: 100%;
+  padding: 5rem;
+}
+
+.template-pays h2 {
+  text-align: center;
+}
+
+.champs-perso {
+  background-color: rgb(250, 210, 150);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */
