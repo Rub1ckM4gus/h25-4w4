@@ -28,7 +28,9 @@ genere_vague($footer_couleur, $footer_couleur_background);
                 Exercitationem, ea!
             </div>
         </section>
-        <section class="piedpage_s2"></section>
+        <section class="piedpage_s2">
+            <a href="https://github.com/Rub1ckM4gus/h25-4w4/tree/tp2">Lien repositoire github</a>
+        </section>
         <section class="piedpage_s3"></section>
     </div>
 </footer>

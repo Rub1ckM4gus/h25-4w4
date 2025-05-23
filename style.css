@@ -190,6 +190,12 @@ h6 {
   color: black;
   border-radius: 3px;
 }
+.categorie__ul__li:hover {
+  border: 1px solid orange;
+  background-color: orangered;
+  color: white;
+  transition: all 0.5s;
+}
 
 .vague {
   position: relative;
@@ -229,6 +235,20 @@ h6 {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+}
+
+.destination__list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  gap: 2rem;
+}
+
+.destination__list div {
+  background-color: rgb(183, 233, 183);
+  padding: 2rem;
+  border-radius: 3rem;
 }
 
 .gabarit_404 {
@@ -474,6 +494,11 @@ footer {
   flex: 1 0 400px;
 }
 
+.piedpage_s2 {
+  color: blue;
+  font-size: x-large;
+}
+
 .global {
   padding-bottom: 0;
 }
@@ -514,4 +539,5 @@ footer {
   flex-direction: column;
   width: 100%;
   background-color: lightgreen;
+  padding-bottom: 5rem;
 }/*# sourceMappingURL=style.css.map */

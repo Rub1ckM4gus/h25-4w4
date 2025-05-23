@@ -6,6 +6,12 @@
     list-style-type: none;
     justify-content: center;
     &__li{
+        &:hover{
+            border: 1px solid orange;
+            background-color: orangered;
+            color: white;
+            transition: all 0.5s;
+        }
         padding: 3px;
         border: 1px solid orangered;
         background-color: orange;

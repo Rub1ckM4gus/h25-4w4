@@ -30,3 +30,17 @@
     flex-direction: row;
     gap: 2rem;
 }
+
+.destination__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+}
+
+.destination__list div{
+    background-color: rgb(183, 233, 183);
+    padding: 2rem;
+    border-radius: 3rem;
+}
