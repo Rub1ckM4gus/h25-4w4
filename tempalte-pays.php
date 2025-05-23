@@ -17,7 +17,11 @@ get_header();
             <?php the_field('coordonne_evenement'); ?></p>
         </div>
 
-        <?php ?>
+        <?php
+            $template_couleur = get_theme_mod('template_couleur','lightgreen');
+            $template_couleur_background = get_theme_mod('template_couleur_background','blanchedalmond');
+            genere_vague($template_couleur, $template_couleur_background);
+        ?>
         <!-- ////////////////////////////////////////////////  section rest-api -->
         <section class="destination">
             <?php categories_liste("destination") ?>
